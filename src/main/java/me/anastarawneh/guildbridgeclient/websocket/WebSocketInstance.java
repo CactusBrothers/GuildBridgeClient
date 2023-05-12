@@ -116,7 +116,7 @@ public class WebSocketInstance extends WebSocketClient {
         }
         else if (code != 1000) {
             Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(
-                    GuildBridgeClient.MSG_PREFIX + " Could not connect to the WebSocket. Contact Anas for support."
+                    GuildBridgeClient.MSG_PREFIX + " Could not connect to the WebSocket. Contact Anas for support." + "Error code: " + code + "Reason: " + reason
             ));
         }
     }
